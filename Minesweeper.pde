@@ -133,7 +133,7 @@ public class MSButton
         else if(clicked)
             fill(0,255,0);
         else 
-            fill(0,255,0);
+            fill(0,0,0);
         rect(x, y, width, height);
         fill(0);
         text(myLabel,x+width/2,y+height/2);
