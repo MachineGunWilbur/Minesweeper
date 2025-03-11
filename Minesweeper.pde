@@ -42,7 +42,7 @@ public boolean isWon(){
 public void displayLosingMessage()
 {
     //your code here
-    String lose = " You Lose! L bozo";
+    String lose = "You're a fucking bum GG no re gang";
     for (int i = 1; i < NUM_COLS; i++) {
       
       buttons[NUM_COLS / 2][i].setLabel(lose.substring(i - 1, i));
@@ -131,10 +131,9 @@ public class MSButton
          else if( clicked && mines.contains(this) ) 
              fill(255,0,0);
         else if(clicked)
-            fill( 200 );
+            fill(0,255,0);
         else 
-            fill( 100 );
-fill(0,255,0);
+            fill(0,255,0);
         rect(x, y, width, height);
         fill(0);
         text(myLabel,x+width/2,y+height/2);
