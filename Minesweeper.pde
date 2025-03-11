@@ -10,7 +10,7 @@ void setup ()
     size(400, 400);
     textAlign(CENTER,CENTER);
     // make the shits
-    Interactive.make( this )
+    Interactive.make( this );
     //your code to initialize buttons goes here
     buttons = new MSButton[NUM_ROWS][NUM_COLS];
     for (int r = 0; r < NUM_ROWS; r++) {
@@ -43,7 +43,7 @@ public void displayLosingMessage()
 {
     //your code here
     String lose = "You're a fucking bum GG no re gang";
-    for (int i = 1; i < NUM_COLS; i++) {
+    for (int i = 0; i < NUM_COLS; i++) {
       
       buttons[NUM_COLS / 2][i].setLabel(lose.substring(i - 1, i));
     }
